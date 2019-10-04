@@ -1,5 +1,6 @@
 #Steven Phan
-#014358810
+#Shoraj Manandhar
+#Allen Lupisan
 
 # Problem 1
 # Write a function that will take in three inputs: base, exponent, and divsor. The output would be the produc to the values
@@ -28,14 +29,23 @@ def modulus_product(base, exponent, divisor):
 def isPrime(L):
     #(values) = [(expression) for (value) in (collection) if condition]
     # for num in len(range(L)):
-    #     if L[num] 
-    # test = list()
-    # for num in range(len(L)): 
-    #     for ints_below_num in range (2,L[num]+1):
-    #        # print (L[num], "divided by", ints_below_num, "equal to", L[num]%ints_below_num)
-    #         if x
-    # answer = [L[num] for num in range(len(L)) for ints_below_num in range(2,L[num]+1) if L[num]%ints_below_num != 0]
-    #  print(answer)
+    #     if L[num]
+    test = list()
+    for num in range(len(L)): 
+        prime_number = True
+        for int_below_num in range (2,L[num]):
+            # print (L[num], "divided by", int_below_num, "equal to", L[num]%int_below_num)
+            if L[num]%int_below_num==0: 
+                prime_number = False
+                break
+        if prime_number == True: 
+            test.append(L[num])
+        
+    
+   # print(prime_number) 
+    return test         
+    #answer = [L[num] for num in range(len(L)) for int_below_num in range(2,L[num]+1) if L[num]%int_below_num != 0]
+    #print(answer)
 
-isPrime([2,3,5,8,10,13])
+print(isPrime([2,3,5,8,10,13]))
 # print (list(set(range(2,11)) - {x for x in range(11) for y in range(2,x) if x%y == 0}))
