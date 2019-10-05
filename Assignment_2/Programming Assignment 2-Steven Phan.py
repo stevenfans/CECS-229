@@ -20,6 +20,7 @@ def modulus_product(base, exponent, divisor):
 
     return answer      
 
+#comment out test case
 #print(modulus_product(2,10,2))                                                
     
 # Probelem 2.
@@ -43,4 +44,5 @@ def isPrime(L):
             
     return list_of_primes         
 
+#comment out test case
 #print(isPrime([2,3,5,8,10,13]))
