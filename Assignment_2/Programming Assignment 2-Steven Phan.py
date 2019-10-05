@@ -20,7 +20,7 @@ def modulus_product(base, exponent, divisor):
 
     return answer      
 
-print(modulus_product(2,10,2))                                                
+#print(modulus_product(2,10,2))                                                
     
 # Probelem 2.
 # Write a function, isPrime(L)
@@ -43,4 +43,4 @@ def isPrime(L):
             
     return list_of_primes         
 
-print(isPrime([2,3,5,8,10,13]))
+#print(isPrime([2,3,5,8,10,13]))
