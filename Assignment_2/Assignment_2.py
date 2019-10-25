@@ -26,16 +26,17 @@ def modulus_product(base, exponent, divisor):
 #     L - list of numbers greater than 1.
 # output: numbers from that list that are prime
 def isPrime(L):
-    #(values) = [(expression) for (value) in (collection) if condition]
-    # for num in len(range(L)):
-    #     if L[num] 
-    # test = list()
-    # for num in range(len(L)): 
-    #     for ints_below_num in range (2,L[num]+1):
-    #        # print (L[num], "divided by", ints_below_num, "equal to", L[num]%ints_below_num)
-    #         if x
-    # answer = [L[num] for num in range(len(L)) for ints_below_num in range(2,L[num]+1) if L[num]%ints_below_num != 0]
-    #  print(answer)
+    (values) = [(expression) for (value) in (collection) if condition]
+    for num in len(range(L)):
+        if L[num] 
+    test = list()
+    for num in range(len(L)): 
+        for ints_below_num in range (2,L[num]+1):
+           # print (L[num], "divided by", ints_below_num, "equal to", L[num]%ints_below_num)
+            if x
+    answer = [L[num] for num in range(len(L)) for ints_below_num in range(2,L[num]+1) if L[num]%ints_below_num != 0]
+     print(answer)
+    return False
 
 isPrime([2,3,5,8,10,13])
 # print (list(set(range(2,11)) - {x for x in range(11) for y in range(2,x) if x%y == 0}))
