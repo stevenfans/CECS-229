@@ -17,10 +17,8 @@ def isRelativePrime(L):
 
 #return the inverse mod a.k. y
 def inverseY(M, m):
-    
     isInverse = False
     y = 1
-
     while (isInverse == False): 
         answer = (M*y) % m
         if answer == 1: 
@@ -28,7 +26,6 @@ def inverseY(M, m):
             break
         else: 
             y += 1
-
     return y
 
 def ChineseRemainderTheorem(L): 
@@ -52,38 +49,27 @@ def ChineseRemainderTheorem(L):
             M_list.append(M/m[times])
             y.append(inverseY(M_list[times],m[times]))
             Sum += (a[times] * M_list[times]* y[times])
-           
-        for group in L:
-            a.append(group[0])
-            m.append(group[1])
-            M *= group[1]
-            count+=1 
 
-
-        for times in range(len(m)):
-            M_list.append(M/m[times])
-            y.append(inverseY(M_list[times],m[times]))
-            Sum += (a[times] * M_list[times]* y[times])
-
-        print("test")
         Sum = Sum % M
-        print(Sum)
+
         return Sum
 
     else:
-        string = """Cannot proceed, the modulus values are not relatively prime. 
-                  Thus, you should also implement a relatively prime function
-                  to ensure the list of moduluses are relatively prime"""
+        string = "Cannot proceed, the modulus values are not relatively prime. " \
+                "Thus, you should also implement a relatively prime function "\
+                "to ensure the list of moduluses are relatively prime"
 
         return (string)
+
     
 def main(): 
 
-    test = ([[1,3],[3,5],[2,7]])
-    # test2 = ([[1,5], [2,7], [3,9], [4,11]])
-    # test3 = ([1,5],[2,7], [3,9], [4,11],[8,22])
+    # test = ([[2,3],[3,5],[2,7]])
+    # test = ([[1,5], [2,7], [3,9], [4,11]])
+    test = ([1,5],[2,7], [3,9], [4,11],[8,22])
 
     print(ChineseRemainderTheorem(test))
+
     # a = list()
     # m = list()
     # y = list()
