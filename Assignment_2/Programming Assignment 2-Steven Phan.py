@@ -36,7 +36,7 @@ def isPrime(L):
     test = list()
     for num in range(len(L)): 
         for ints_below_num in range (2,L[num]+1):
-           # print (L[num], "divided by", ints_below_num, "equal to", L[num]%ints_below_num)
+           # print (L[num], "def divided by", ints_below_num, "equal to", L[num]%ints_below_num)
             if x
     answer = [L[num] for num in range(len(L)) for ints_below_num in range(2,L[num]+1) if L[num]%ints_below_num != 0]
      print(answer)
