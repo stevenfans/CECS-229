@@ -22,9 +22,11 @@ def RSAencrypt(p,q,e,message):
         #second turn the number value to strings
         #third combine the string 
         string= ''.join(map(str,[letterToNumber(char) for char in message]))
-        stringList = [(string[i:i+size]) for i in range(0,len(string),size)]
-        # print(stringList)
-        
+        intList = list(map(int,[(string[i:i+size]) for i in range(0,len(string),size)]))
+        # int(''.join(intList))
+        print(intList)
+        c_list = [((M**e)%n) for M in intList]
+        print(c_list)
 
 def blockSize(n): 
     block = 25
