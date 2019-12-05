@@ -1,6 +1,4 @@
 #Steven Phan
-#Shoraj Manandhar
-#Allen Lupisan
 
 #function takes in a list of lists
 #returns whether the gcd of all sublists is 1
@@ -67,8 +65,9 @@ def main():
     # test = ([[2,3],[3,5],[2,7]])
     # test = ([[1,5], [2,7], [3,9], [4,11]])
     # test = ([1,5],[2,7], [3,9], [4,11],[8,22])
+    test = ([1,4],[3,8])
 
-    # print(ChineseRemainderTheorem(test))
+    print(ChineseRemainderTheorem(test))
     pass
     
 if __name__ == "__main__": 
